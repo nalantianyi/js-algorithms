@@ -1,0 +1,14 @@
+{
+  "name": "js-algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "index": "node src/minibook/index.js",
+    "array": "node src/minibook/array.js",
+    "string": "node src/minibook/string.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
