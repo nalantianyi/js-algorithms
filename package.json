@@ -6,7 +6,8 @@
   "scripts": {
     "index": "node src/minibook/index.js",
     "array": "node src/minibook/array.js",
-    "string": "node src/minibook/string.js"
+    "string": "node src/minibook/string.js",
+    "linkedlist": "node src/minibook/linkedlist.js"
   },
   "keywords": [],
   "author": "",
