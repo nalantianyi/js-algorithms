@@ -13,15 +13,14 @@ class ListNode {
     this.val = val;
     this.next = null;
   }
-  print() {
+  toString() {
     let values = [];
     let next = this.next;
     while (next && next.val) {
       if (next.val) values.push(next.val);
       next = next.next;
     }
-
-    console.log(values.join("->"));
+    return values.join("->");
   }
 }
 
@@ -78,6 +77,6 @@ linkNode4.next = linkNode5;
 const linkNode6 = new ListNode(4);
 linkNode5.next = linkNode6;
 
-head1.print();
-head2.print();
-mergeTwoLists(head1.next, head2.next).print(); // 注意这里,按照原作者的实现要传入两个链表的第一个节点
+console.log(head1 + "");
+console.log(head2 + "");
+console.log(mergeTwoLists(head1.next, head2.next) + ""); // 注意这里,按照原作者的实现要传入两个链表的第一个节点
