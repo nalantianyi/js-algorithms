@@ -6,7 +6,7 @@
  */
 
 /**
- * 此处先添加 ListNode 的实现
+ * 此处先添加 ListNode 的简易实现
  */
 class ListNode {
   constructor(val) {
