@@ -1,9 +1,5 @@
-# js-algorithms
+# algorithms
 
 ## 归纳总结自己梳理算法和数据结构中遇到的题目和解法
 
-### 会列出原作者的解法和自己的理解
-
-### 出处主要是几个掘金小册子《前端算法与数据结构面试》，《 JavaScript 算法》这本书，还会加入些自己收集的
-
-### [小册子链接](https://s.juejin.cn/ds/ijAhfKn4/)
+后续迁移至[个人站点](https://miaodaddy.xyz)

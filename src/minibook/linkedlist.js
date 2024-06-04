@@ -80,3 +80,38 @@ linkNode5.next = linkNode6;
 console.log(head1 + "");
 console.log(head2 + "");
 console.log(mergeTwoLists(head1.next, head2.next) + ""); // 注意这里,按照原作者的实现要传入两个链表的第一个节点
+
+/**
+ * 链表结点的删除
+ *
+ * 真题描述：给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。
+ *
+ * 示例 1:
+ * 输入: 1->1->2
+ * 输出: 1->2
+ * 示例 2:
+ * 输入: 1->1->2->3->3
+ * 输出: 1->2->3
+ */
+
+// 原作者实现
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+const deleteDuplicates = function (head) {
+  // 设定 cur 指针，初始位置为链表第一个结点
+  let cur = head;
+  // 遍历链表
+  while (cur != null && cur.next != null) {
+    // 若当前结点和它后面一个结点值相等（重复）
+    if (cur.val === cur.next.val) {
+      // 删除靠后的那个结点（去重）
+      cur.next = cur.next.next;
+    } else {
+      // 若不重复，继续遍历
+      cur = cur.next;
+    }
+  }
+  return head;
+};
